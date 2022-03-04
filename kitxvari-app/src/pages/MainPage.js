@@ -11,18 +11,20 @@ const steps = [
     },
     {
         active: true,
-        componentform: <components.TechnicalSkillsForm/>,
-        componentparagraph: <components.TechnicalSkillsParagraph/>,
+        componentform: <components.TechnicalSkillsForm />,
+        componentparagraph: <components.TechnicalSkillsParagraph />,
         canNavigateBack: true
     },
     {
         active: false,
-        componentform: <components.CovidPageForm/>,
-        componentparagraph: <components.CovidPageParagraph/>,
+        componentform: <components.CovidPageForm />,
+        componentparagraph: <components.CovidPageParagraph />,
         canNavigateBack: true
     },
     {
         active: false,
+        componentform: <components.RedBerryInsightForm />,
+        componentparagraph: <components.RedBerryInsightParagraph />,
         canNavigateBack: true
     },
     {
@@ -39,7 +41,10 @@ const MainPage = () => {
     let [activeIndex, setActiveIndex] = useState(0);
     console.log(activeIndex)
     const nextStep = () => {
-        if (activeIndex <= 3) {
+        if (activeIndex === 3) {
+            console.log('shemovidaa')
+            history.push('/submit')
+        } else if (activeIndex <= 3) {
             setActiveIndex(activeIndex + 1)
         }
         // let Ai = steps.findIndex(item => item.active)
@@ -49,7 +54,7 @@ const MainPage = () => {
     const backStep = () => {
         if (activeIndex) {
             setActiveIndex(activeIndex - 1)
-        }if(activeIndex === 0 ) {
+        } if (activeIndex === 0) {
             history.push('/');
         }
 

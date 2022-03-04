@@ -164,7 +164,7 @@
   align-items: center;
 }
 
-.personalInfo-form > input, select {
+.personalInfo-form>input, select {
   padding-left: 57px;
   height: 54px;
   margin-top: 35px;
@@ -192,7 +192,8 @@
   transform: scale(1.08);
   transition: all .2s;
 }
-.back-step-bubble, .next-step-bubble { 
+
+.back-step-bubble, .next-step-bubble {
   border: solid 3px #FE3B1F;
   border-radius: 50%;
   height: 18px;
@@ -201,15 +202,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
-.back-step-bubble div { 
-  
+
+.back-step-bubble div {
+
   transform: rotate(135deg);
 }
-.next-step-bubble div { 
+
+.next-step-bubble div {
   transform: rotate(-45deg);
 }
-.stepper-button { 
+
+.stepper-button {
   border: solid 3px #FE3B1F;
   height: 6px;
   width: 6px;

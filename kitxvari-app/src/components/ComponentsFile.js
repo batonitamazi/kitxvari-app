@@ -134,6 +134,7 @@ export const CovidPageForm = () => {
 
     )
 }
+
 export const CovidPageParagraph = () => {
     return (
         <>
@@ -157,39 +158,57 @@ export const CovidPageParagraph = () => {
 }
 
 
-// export const personalInfoPageForm = () => {
-//     return (
-//         <>
-//             <h1 className='main-heading'>
-//                 Hey, Rocketeer, what are your coordinates?
-//             </h1>
-//             <form className='personalInfo-form'>
-//                 <input type="text" name="name" placeholder='First Name' />
-//                 <input type="text" name="name" placeholder='Last Name' />
-//                 <input type="Email" name="name" placeholder='Email' />
-//                 <input type="Number" name="name" placeholder='+995 5_ _ _ _ ' />
-//             </form>
-//         </>
+export const RedBerryInsightForm = () => {
+    return (
+        <>
+            <h1 className='main-heading'>
+                What about you?
+            </h1>
+            <p>
+                Would you attend Devtalks and maybe also organize your own?
+            </p>
+            <div >
+                <input type="radio" value="yes" name="choose" /> yes
+                <input type="radio" value="no" name="choose" /> no
+            </div>
+            <p>
+                What would you speak about at Devtalk?
+            </p>
+            <form >
+                <input type="text" name="Devtalk" placeholder='I Would...' />
+            </form>
+            <p>
+                Tell us something special
+            </p>
+            <form >
+                <input type="text" name="special" placeholder='I...' />
+            </form>
+        </>
 
 
-//     )
-// }
-// export const PersonalInfoPageParagraph = () => {
-//     return (
-//         <>
-//             <h1 className='main-heading'>
-//                 Redberry Origins
-//             </h1>
-//             <p className='main-paragraph'>
-//                 You watch “What? Where? When?” Yeah. Our founders used to play it.
-//                 That’s where they got a question about a famous American author and
-//                 screenwriter Ray Bradbury. Albeit, our CEO Gaga Darsalia forgot the
-//                 exact name and he answered Ray Redberry. And at that moment, a name
-//                 for a yet to be born company was inspired - Redberry 😇
-//             </p>
-//         </>
+    )
+}
+export const RedBerryInsightParagraph = () => {
+    return (
+        <>
+            <h1 className='main-heading'>
+                Redberrian Insights
+            </h1>
+            <p className='main-paragraph'>
+                We were soo much fun before the pandemic started!
+                Parties almost every weekend and lavish employee
+                birthday celebrations! Unfortunately, covid ruined
+                that fun like it did almost everything else in the world.
+                But we try our best to zhuzh it up a bit. For example,
+                we host biweekly Devtalks where our senior and lead developers
+                talk about topics they are passionate about. Previous topics
+                have included Web3, NFT, Laravel 9, Kubernetes, etc. We hold
+                these talks in the office but you can join our Zoom broadcast
+                as well. Feel free to join either as an attendee or a speaker!
+            </p>
+        </>
 
 
-//     )
-// }
+    )
+}
 

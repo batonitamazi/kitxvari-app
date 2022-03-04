@@ -1,13 +1,9 @@
 import React from "react"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
-// import CovidPage from './pages/CovidPage'
+import {Switch, Route } from "react-router-dom"
 import LandingPage from './pages/LandingPage'
-import PersonalInfoPage from './pages/PersonalInfo'
-// import rdbrInsightPage from './pages/rdbrInsightPage'
-// import SubmitPage from './pages/SubmitPage'
-import TechSkillPage from './pages/TechSkillPage'
+import SubmitPage from './pages/SubmitPage'
 import MainPage  from "./pages/MainPage"
-// import ThanksPage from './pages/ThanksPage'
+import ThanksPage from "./pages/ThanksPage"
 
 
 
@@ -15,12 +11,8 @@ const Routing = () => {
     return <Switch>
         <Route path='/' component={LandingPage} exact />
         <Route path='/MainPage' component={MainPage} exact />
-        <Route path='/personalinfo' component={PersonalInfoPage} exact />
-        <Route path='/techskill' component={TechSkillPage} exact/>
-        {/* <Route path='/covid' component={CovidPage} exact/>
-        <Route path='/rdbrinsight' component={rdbrInsightPage} exact/>
         <Route path='/submit' component={SubmitPage} exact/>
-        <Route path='/thanks' component={ThanksPage} exact/>  */}
+        <Route path='/thankspage' component={ThanksPage}/>
     </Switch>
 }
 export default Routing
