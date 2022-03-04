@@ -83,41 +83,78 @@ export const TechnicalSkillsParagraph = () => {
 }
 
 
-// export const personalInfoPageForm = () => {
-//     return (
-//         <>
-//             <h1 className='main-heading'>
-//                 Hey, Rocketeer, what are your coordinates?
-//             </h1>
-//             <form className='personalInfo-form'>
-//                 <input type="text" name="name" placeholder='First Name' />
-//                 <input type="text" name="name" placeholder='Last Name' />
-//                 <input type="Email" name="name" placeholder='Email' />
-//                 <input type="Number" name="name" placeholder='+995 5_ _ _ _ ' />
-//             </form>
-//         </>
+export const CovidPageForm = () => {
+    return (
+        <>
+            <h1 className='main-heading'>
+                Covid Stuff
+            </h1>
+            <p>
+                how would you prefer to work?
+            </p>
+            <div >
+                <input type="radio" value="office" name="choose-office" /> From Sairme Office
+                <input type="radio" value="home" name="choose-office" /> From Home
+                <input type="radio" value="hybrid" name="choose-office" /> Hybrid
+            </div>
+            <p>
+                Did you contact covid 19? :(
+            </p>
+            <div >
+                <input type="radio" value="yes" name="covid19" /> yes
+                <input type="radio" value="no" name="covid19" /> no
+            </div>
+            <p>
+                When?
+            </p>
+            <div>
+                <input type="date" id="start" name="trip-start"
+                    value="2018-07-22"
+                    min="2018-01-01" max="2018-12-31" />
+            </div>
+            <p>
+                Have you been vaccinated?
+            </p>
+            <div >
+                <input type="radio" value="yes" name="choose" /> yes
+                <input type="radio" value="no" name="choose" /> no
+            </div>
+            <p>
+                When did you get your last covid vaccine?
+            </p>
+            <div>
+                <input type="date" id="start" name="trip-start"
+                    value="2018-07-22"
+                    min="2018-01-01" max="2018-12-31" />
+            </div>
 
 
-//     )
-// }
-// export const PersonalInfoPageParagraph = () => {
-//     return (
-//         <>
-//             <h1 className='main-heading'>
-//                 Redberry Origins
-//             </h1>
-//             <p className='main-paragraph'>
-//                 You watch “What? Where? When?” Yeah. Our founders used to play it.
-//                 That’s where they got a question about a famous American author and
-//                 screenwriter Ray Bradbury. Albeit, our CEO Gaga Darsalia forgot the
-//                 exact name and he answered Ray Redberry. And at that moment, a name
-//                 for a yet to be born company was inspired - Redberry 😇
-//             </p>
-//         </>
+        </>
 
 
-//     )
-// }
+    )
+}
+export const CovidPageParagraph = () => {
+    return (
+        <>
+            <h1 className='main-heading'>
+                Redberry Covid Policies
+            </h1>
+            <p className='main-paragraph'>
+                As this infamous pandemic took over the world, we
+                adjusted our working practices so that our employees
+                can be as safe and comfortable as possible. We have a
+                hybrid work environment, so you can either work from
+                home or visit our lovely office on Sairme Street. If
+                it was up to us, we would love you to see us in the office
+                because we think face-to-face communications {'>'} Zoom meetings.
+                Both on the fun and productivity scales.
+            </p>
+        </>
+
+
+    )
+}
 
 
 // export const personalInfoPageForm = () => {
