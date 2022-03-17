@@ -52,7 +52,7 @@ export const TechnicalSkillsForm = () => {
                     <option value="audi">Audi</option>
                 </select>
                 <input type="text" name="name" placeholder='Experience Duration in Years' />
-                <button>
+                <button className='add-language-button'>
                     Add Programming Language
                 </button>
                 <input type="Email" name="name" placeholder='Email' />
@@ -89,46 +89,63 @@ export const CovidPageForm = () => {
             <h1 className='main-heading'>
                 Covid Stuff
             </h1>
-            <p>
-                how would you prefer to work?
-            </p>
-            <div >
-                <input type="radio" value="office" name="choose-office" /> From Sairme Office
-                <input type="radio" value="home" name="choose-office" /> From Home
-                <input type="radio" value="hybrid" name="choose-office" /> Hybrid
+            <div className='covid-questions-containers'>
+                <p className='questions-paragraph'>
+                    how would you prefer to work?
+                </p>
+                <div className='radio-buttons-container'>
+                    <input type="radio" value="office" name="choose-office" className='radio-button-item' /> From Sairme Office
+                    <input type="radio" value="home" name="choose-office" className='radio-button-item' /> From Home
+                    <input type="radio" value="hybrid" name="choose-office" className='radio-button-item' /> Hybrid
+                </div>
             </div>
-            <p>
+            <div className='covid-questions-containers'> 
+                <p className='questions-paragraph'>
                 Did you contact covid 19? :(
             </p>
-            <div >
-                <input type="radio" value="yes" name="covid19" /> yes
-                <input type="radio" value="no" name="covid19" /> no
+                <div className='radio-buttons-container'>
+                    <input type="radio" value="yes" name="covid19" className='radio-button-item' /> yes
+                    <input type="radio" value="no" name="covid19" className='radio-button-item' /> no
+                </div></div>
+            <div className='covid-questions-containers'>
+                <p className='questions-paragraph'>
+                    Did you contact covid 19? :(
+                </p>
+                <div className='radio-buttons-container'>
+                    <input type="radio" value="yes" name="covid19" className='radio-button-item' /> yes
+                    <input type="radio" value="no" name="covid19" className='radio-button-item' /> no
+                </div>
             </div>
-            <p>
-                When?
-            </p>
-            <div>
-                <input type="date" id="start" name="trip-start"
-                    value="2018-07-22"
-                    min="2018-01-01" max="2018-12-31" />
+            <div className='covid-questions-containers'>
+                <p className='questions-paragraph'>
+                    When?
+                </p>
+                <div>
+                    <input type="date" id="start" name="trip-start"
+                        value="2018-07-22"
+                        min="2018-01-01" max="2018-12-31" />
+                </div>
             </div>
-            <p>
-                Have you been vaccinated?
-            </p>
-            <div >
-                <input type="radio" value="yes" name="choose" /> yes
-                <input type="radio" value="no" name="choose" /> no
-            </div>
-            <p>
-                When did you get your last covid vaccine?
-            </p>
-            <div>
-                <input type="date" id="start" name="trip-start"
-                    value="2018-07-22"
-                    min="2018-01-01" max="2018-12-31" />
+            <div className='covid-questions-containers'>
+                <p className='questions-paragraph'>
+                    Have you been vaccinated?
+                </p>
+                <div className='radio-buttons-container'>
+                    <input type="radio" value="yes" name="choose" className='radio-button-item' /> yes
+                    <input type="radio" value="no" name="choose" className='radio-button-item' /> no
+                </div>
             </div>
 
-
+            <div className='covid-questions-containers'>
+                <p className='questions-paragraph'>
+                    When did you get your last covid vaccine?
+                </p>
+                <div >
+                    <input type="date" id="start" name="trip-start"
+                        value="2018-07-22"
+                        min="2018-01-01" max="2018-12-31" />
+                </div>
+            </div>
         </>
 
 

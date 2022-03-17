@@ -1,10 +1,9 @@
 import React from "react"
 import {Switch, Route } from "react-router-dom"
-import LandingPage from './pages/LandingPage'
-import SubmitPage from './pages/SubmitPage'
-import MainPage  from "./pages/MainPage"
-import ThanksPage from "./pages/ThanksPage"
-
+import LandingPage from "./pages/landingpage/LandingPage"
+import MainPage from "./pages/mainpage/MainPage"
+import SubmitPage from "./pages/submitpage/SubmitPage"
+import ThanksPage from "./pages/thankspage/ThanksPage"
 
 
 const Routing = () => {

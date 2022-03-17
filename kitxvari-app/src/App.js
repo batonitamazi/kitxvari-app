@@ -8,7 +8,7 @@ import {
 function App() {
   return (
     <div className="App">
-      <Router forceRefresh={true}>
+      <Router forceRefresh={false}>
         <Routing style={{ overflow: 'hidden' }} />
       </Router>
     </div>

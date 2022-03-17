@@ -38,69 +38,6 @@
   }
 }
 
-.landing-page-container {
-  background-color: #0C0D0E;
-  width: 100%;
-  height: 100vh;
-  background-image: url('../public/stars.png');
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.landing-page-button-container {
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-
-}
-
-.start-button {
-  margin: 30px;
-  background: #FE3B1F;
-  border-radius: 50px;
-  width: 395px;
-  height: 79px;
-  font-size: 24px;
-  color: white;
-  outline: none;
-  border: none;
-  cursor: pointer;
-}
-
-.landing-page-title {
-  font-family: Rowdies;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 96px;
-  line-height: 119px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #FE3B1F;
-}
-
-.submit-application-button {
-  width: 338px;
-  height: 66px;
-  font-family: Montserrat;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 29px;
-  text-decoration-line: underline;
-  color: white;
-  cursor: pointer;
-}
-
-.rocketman {
-  width: 409.92px;
-  height: 372.45px;
-  transform: rotate(10.28deg);
-}
 
 .white-black-screen {
   width: 100%;
@@ -111,7 +48,7 @@
 
 }
 
-.white-black-screen>div {
+.white-black-screen> div {
   flex: 0.5;
 }
 
@@ -154,7 +91,7 @@
   font-family: Montserrat;
   letter-spacing: 0.05em;
 
-  /* line-height: 48px; */
+  
 }
 
 .personalInfo-form {
@@ -221,4 +158,42 @@
   /* margin: 0 15px; */
   border-top: none;
   border-left: none;
+}
+
+.add-language-button {
+  width: 201px;
+  height: 40px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 14.63px;
+  text-align: center;
+  border: none;
+  background: #FE3B1F;
+  color: white;
+  margin-left: 56%;
+  margin-top: 25px;
+}
+
+.questions-paragraph {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+.covid-questions-containers{ 
+  flex: 0.2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.radio-buttons-container { 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around ;
 }

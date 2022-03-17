@@ -1,0 +1,59 @@
+.landing-page-container {
+    background-color: #0C0D0E;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../public/stars.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.landing-page-button-container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  
+}
+.landing-page-title {
+    font-family: Rowdies;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 96px;
+    line-height: 119px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FE3B1F;
+}
+
+.start-button {
+    margin: 30px;
+    background: #FE3B1F;
+    border-radius: 50px;
+    width: 395px;
+    height: 79px;
+    font-size: 24px;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.submit-application-button {
+    width: 338px;
+    height: 66px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration-line: underline;
+    color: white;
+    cursor: pointer;
+}
+.rocketman {
+    width: 409.92px;
+    height: 372.45px;
+    transform: rotate(10.28deg);
+}

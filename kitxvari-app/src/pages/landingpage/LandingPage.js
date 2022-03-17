@@ -1,8 +1,6 @@
 import * as React from 'react';
-import '../App.css';
+import './LandingPage.css';
 import { useHistory } from "react-router-dom";
-
-
 
 const LandingPage = () => {
     const history = useHistory();
@@ -13,7 +11,7 @@ const LandingPage = () => {
             </h1>
             <div className='landing-page-button-container'>
                 <button className='start-button' onClick={() => { 
-                    history.push("/MainPage");
+                    history.push(`/MainPage`);
                 }}>
                     Start Questionnaire
                 </button>

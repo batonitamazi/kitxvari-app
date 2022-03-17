@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
-import * as components from '../components/ComponentsFile';
+import { useHistory, useLocation } from 'react-router-dom';
+import * as components from '../../components/ComponentsFile';
+import '../../App.css';
 
 const steps = [
     {
@@ -37,17 +38,24 @@ const steps = [
 
 
 const MainPage = () => {
+    // let index = 0
+    // let { search } = useLocation();
     const history = useHistory()
-    let [activeIndex, setActiveIndex] = useState(0);
-    console.log(activeIndex)
+    const [activeIndex, setActiveIndex] = useState(0);
+    // console.log(activeIndex)
+    // const query = new URLSearchParams(search);
+    // const activeIndex = query.get('form');
     const nextStep = () => {
-        if (activeIndex === 3) {
-            console.log('shemovidaa')
+        if (activeIndex === 3) {   
             history.push('/submit')
         } else if (activeIndex <= 3) {
+            // index +=1
             setActiveIndex(activeIndex + 1)
+            // history.push(`/MainPage?form=${activeIndex + 1}`);
+            // history.push(`/MainPage/${activeIndex}`);
+            history.push(`/MainPage`);
+
         }
-        // let Ai = steps.findIndex(item => item.active)
 
 
     }
@@ -55,7 +63,7 @@ const MainPage = () => {
         if (activeIndex) {
             setActiveIndex(activeIndex - 1)
         } if (activeIndex === 0) {
-            history.push('/');
+            history.push(`/`);
         }
 
     }

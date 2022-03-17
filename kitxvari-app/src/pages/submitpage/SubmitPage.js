@@ -1,9 +1,10 @@
 import * as React from 'react';
-import '../App.css';
-import { useHistory } from "react-router-dom";
+import '../../App.css';
+import { useHistory, useLocation } from "react-router-dom";
 
 
 const SubmitPage = () => {
+    
     const history = useHistory();
     return (
         <div className='landing-page-container'>
@@ -14,7 +15,7 @@ const SubmitPage = () => {
                     Submit
                 </button>
                 <a className='submit-application-button' onClick={() => {
-                    history.push("/MainPage");
+                    history.push(`/MainPage/`);
                 }}>
                     go Back
                 </a>
